@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include "Singleton.h"
+#include "ExampleManager.h"
+#include "conio.h"
 
 class MyEntero : public Singleton<MyEntero>
 {
@@ -26,5 +28,18 @@ int main()
     MyEntero::GetInstance().value = 128;
     MyEntero::GetInstance().PrintValue();
 
+    //preparar cosas para el engine
+    ExampleManager::GetInstance().startup();
+
     std::cout << "Hello World!\n";
+
+    int keycode = 0;
+    while (keycode != 27) // osea esc
+    {
+        keycode = _getch();
+        std::cout << "keycode= " << keycode << "\n";
+        
+    }
+    std::cout << "user closed the engine\n";
+    ExampleManager::GetInstance().shutdown();
 }

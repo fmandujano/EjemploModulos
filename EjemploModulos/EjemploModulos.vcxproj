@@ -129,8 +129,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="EjemploModulos.cpp" />
+    <ClCompile Include="ExampleManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ExampleManager.h" />
     <ClInclude Include="Singleton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

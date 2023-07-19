@@ -18,9 +18,15 @@
     <ClCompile Include="EjemploModulos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExampleManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
